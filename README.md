@@ -1,5 +1,8 @@
-ROCket
-================
+
+# ROCket <img src='man/figures/hex_logo.png' align="right" height="120" />
+
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ROCket)](https://cran.r-project.org/package=ROCket)
+[![license](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Intro
 
@@ -27,10 +30,6 @@ devtools::install_github("da-zar/ROCket")
 
 ## Example
 
-``` r
-library(ROCket)
-```
-
 ### Data preparation
 
 The easiest way to get started is to prepare a dataset containing all
@@ -42,12 +41,12 @@ nrow(data_agg)
 #> [1] 11
 head(data_agg)
 #>    score totals positives
-#> 1:     2  30401     24317
-#> 2:     0  62529     24198
-#> 3:     1  62134     37997
-#> 4:    -1  30257      6060
-#> 5:    -2   6631       637
-#> 6:     4    642       615
+#> 1:     1  62840     38499
+#> 2:     0  62309     23985
+#> 3:     2  30143     24092
+#> 4:    -1  30282      6072
+#> 5:    -2   6509       597
+#> 6:     3   6642      6082
 ```
 
 You can now pass this data to the `rkt_prep` function in order to create
@@ -81,7 +80,7 @@ prep_data_agg
 plot(prep_data_agg)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
 
 ### ROC curves
 
@@ -134,4 +133,4 @@ for (i in 1:4){
 }
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-7-1.png)<!-- -->

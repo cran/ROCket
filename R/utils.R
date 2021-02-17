@@ -35,9 +35,6 @@ plot_points <- function(x, y,
                         add = FALSE, col = par("col"), pch = 21, cex = 1, bg = getOption("rkt_pride_colors"),
                         draw_grid = !add, h = NULL, v = NULL, grid_col = "gray83", grid_lty = 2, grid_lwd = 1,
                         ...) {
-  old_par <- par(mar = c(5, 5, 2, 2) + 0.1)
-  on.exit(par(old_par), add = TRUE)
-
   # ------------------------------------------
   # input validation
 
@@ -74,6 +71,9 @@ plot_points <- function(x, y,
     if (missing(ylim)) {
       ylim <- pretty_lim(y)
     }
+    old_par <- par(mar = c(5, 5, 2, 2) + 0.1)
+    on.exit(par(old_par), add = TRUE)
+
     plot(NA, NA, xlim = xlim, ylim = ylim, xlab = xlab, ylab = ylab, ...)
   }
 
@@ -99,9 +99,6 @@ plot_function <- function(f, xlim, ylim,
                           draw_grid = !add, h = NULL, v = NULL, grid_col = "gray83", grid_lty = 2, grid_lwd = 1,
                           draw_area = FALSE, density = NULL, angle_set = 45, area_col = "gray93",
                           ...) {
-  old_par <- par(mar = c(5, 5, 2, 2) + 0.1)
-  on.exit(par(old_par), add = TRUE)
-
   # ------------------------------------------
   # input validation
 
@@ -160,6 +157,9 @@ plot_function <- function(f, xlim, ylim,
         ylim <- pretty_lim(y)
       }
     }
+    old_par <- par(mar = c(5, 5, 2, 2) + 0.1)
+    on.exit(par(old_par), add = TRUE)
+
     plot(NA, NA, xlim = xlim, ylim = ylim, xlab = xlab, ylab = ylab, ...)
   }
 
@@ -205,9 +205,6 @@ plot_curve <- function(f, xlim, ylim, slim,
                        draw_grid = !add, h = NULL, v = NULL, grid_col = "gray83", grid_lty = 2, grid_lwd = 1,
                        draw_area = FALSE, density = NULL, angle_set = 45, area_col = "gray93",
                        ...) {
-  old_par <- par(mar = c(5, 5, 2, 2) + 0.1)
-  on.exit(par(old_par), add = TRUE)
-
   # ------------------------------------------
   # input validation
 
@@ -266,6 +263,9 @@ plot_curve <- function(f, xlim, ylim, slim,
     if (missing(ylim)) {
       ylim <- pretty_lim(y)
     }
+    old_par <- par(mar = c(5, 5, 2, 2) + 0.1)
+    on.exit(par(old_par), add = TRUE)
+
     plot(NA, NA, xlim = xlim, ylim = ylim, xlab = xlab, ylab = ylab, ...)
   }
 

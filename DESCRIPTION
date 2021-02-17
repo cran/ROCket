@@ -1,7 +1,7 @@
 Package: ROCket
 Type: Package
 Title: Simple and Fast ROC Curves
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("Daniel", "Lazar", email = "da-zar@gmx.net", role = c("aut", "cre"))
 Description: A set of functions for receiver operating characteristic (ROC) curve 
     estimation and area under the curve (AUC) calculation.
@@ -26,8 +26,8 @@ RoxygenNote: 7.1.1
 Collate: 'ROCket.R' 'generics.R' 'auc.R' 'rkt_ecdf.R' 'rkt_prep.R'
         'rkt_roc.R' 'roc_methods.R' 'utils.R' 'zzz.R'
 NeedsCompilation: no
-Packaged: 2021-02-08 12:01:59 UTC; dlazar
+Packaged: 2021-02-14 13:53:06 UTC; dlazar
 Author: Daniel Lazar [aut, cre]
 Maintainer: Daniel Lazar <da-zar@gmx.net>
 Repository: CRAN
-Date/Publication: 2021-02-11 15:10:02 UTC
+Date/Publication: 2021-02-17 09:10:07 UTC
