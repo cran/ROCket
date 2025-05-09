@@ -21,5 +21,5 @@ The (biased) sample variance as a numeric value.
 Sample Variance
 }
 \seealso{
-\code{\link{variance.rkt_ecdf}}, \code{\link{var}}
+\code{\link{variance.rkt_ecdf}}, \code{\link[stats]{var}}
 }

@@ -5,7 +5,7 @@
 #'
 #' @return The (biased) sample variance as a numeric value.
 #'
-#' @seealso \code{\link{variance.rkt_ecdf}}, \code{\link{var}}
+#' @seealso \code{\link{variance.rkt_ecdf}}, \code{\link[stats]{var}}
 #'
 #' @export
 variance <- function(x, ...) {

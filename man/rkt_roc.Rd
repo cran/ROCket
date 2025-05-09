@@ -19,7 +19,7 @@ rkt_roc(prep, method = 1)
 
 \item{x}{An object of class \code{rkt_roc}.}
 
-\item{...}{Further parameters passed to \code{\link{plot}} and \code{\link{lines}}}
+\item{...}{Further parameters passed to \code{\link[graphics]{plot}} and \code{\link[graphics]{lines}}}
 }
 \value{
 An object of class \code{rkt_roc}, i.e. a function or a list of two functions (for method = 1).

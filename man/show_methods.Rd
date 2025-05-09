@@ -7,7 +7,7 @@
 show_methods()
 }
 \value{
-A \code{\link{data.table}} containing the number and a short description of each implemented method.
+A \code{\link[data.table]{data.table}} containing the number and a short description of each implemented method.
 }
 \description{
 Show the implemented ROC estimation methods.

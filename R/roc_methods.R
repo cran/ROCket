@@ -3,7 +3,7 @@
 #'
 #' Show the implemented ROC estimation methods.
 #'
-#' @return A \code{\link{data.table}} containing the number and a short description of each implemented method.
+#' @return A \code{\link[data.table]{data.table}} containing the number and a short description of each implemented method.
 #' @export
 show_methods <- function() {
   roc_methods()[, .(nr, desc)]
